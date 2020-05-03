@@ -33,8 +33,7 @@ void Zadanie::sprawdzPostep()
 {
 	std::cout <<trasa->poczatek<<" do "<<trasa->koniec <<" ("<<autobus->rejestracja<<") \t Odleglosc: "<<meta<< "\t[";
 	float stepSize = (float)scale / (float)meta; 
-
-	krok = (float)postep * (float)stepSize;
+	krok = (float)postep * stepSize;
 
 
 	int krokDruk = (int)krok;
