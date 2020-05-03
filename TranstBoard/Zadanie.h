@@ -3,9 +3,8 @@
 #include "Trasa.h"
 #include "Autobus.h"
 
-//class Zadanie;
-class MenZadan;
-#include "MenZadan.h"
+class Obserwator;
+#include "Obserwator.h"
 #include <iostream>
 
 class Zadanie
@@ -17,7 +16,7 @@ public:
 	bool koniec;
 	int scale = 30;
 
-	MenZadan *mngr;
+	Obserwator *mngr;
 	baseTrasa* trasa;
 	baseKierowca* kierowca;
 	baseAutobus* autobus;
@@ -28,8 +27,8 @@ public:
 	void timerZadania();
 
 	void notify();
-	void attachMngr( MenZadan * mngr);
-	void detachMngr( MenZadan * mngr);
+	void attachMngr(Obserwator* mngr);
+	void detachMngr(Obserwator* mngr);
 	
 
 

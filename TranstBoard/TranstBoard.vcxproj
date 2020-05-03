@@ -149,7 +149,7 @@
   <ItemGroup>
     <ClCompile Include="Autobus.cpp" />
     <ClCompile Include="Kierowca.cpp" />
-    <ClCompile Include="MenZadan.cpp" />
+    <ClCompile Include="Obserwator.cpp" />
     <ClCompile Include="TranstBoard.cpp" />
     <ClCompile Include="Trasa.cpp" />
     <ClCompile Include="Zadanie.cpp" />
@@ -157,7 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Autobus.h" />
     <ClInclude Include="Kierowca.h" />
-    <ClInclude Include="MenZadan.h" />
+    <ClInclude Include="Obserwator.h" />
     <ClInclude Include="Trasa.h" />
     <ClInclude Include="Zadanie.h" />
   </ItemGroup>

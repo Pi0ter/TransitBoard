@@ -1,5 +1,5 @@
 ﻿// TranstBoard.cpp : Ten plik zawiera funkcję „main”. W nim rozpoczyna się i kończy wykonywanie programu.
-//
+
 #include "Kierowca.h"
 #include "Trasa.h"
 #include "Autobus.h"
@@ -11,7 +11,7 @@
 
 int main()
 {
-    std::vector<MenZadan*> listaMngr;
+    std::vector<Obserwator*> listaMngr;
     std::vector<Zadanie*> listaZadan;
 
     Zadanie* pierwsze = new Zadanie;
@@ -42,7 +42,7 @@ int main()
 
 
     for (auto x : listaZadan) {
-        MenZadan* temp = new MenZadan;
+        Obserwator* temp = new Obserwator;
         listaMngr.push_back(temp);
         temp->setObject(x);
         x->attachMngr(temp);
@@ -65,34 +65,6 @@ int main()
 
         Sleep(500);
     }
-
-
-
-
-
-
-
-
-   /* Trasa* test = new Trasa();
-    test->dodajTrase();
-    test->wypiszTrasy();
-    test->usunTrase();*/
-    
-    /*Kierowca * xd = new Kierowca();
-
-    xd->dodajKierowce();
-  
-
-
-
-    xd->wypiszKierowcow();
-    
-    xd->usunKierowce();
-
-
-    xd->wypiszKierowcow();*/
-
-    
    
 
 }

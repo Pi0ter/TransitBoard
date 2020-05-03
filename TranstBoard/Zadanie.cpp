@@ -2,7 +2,7 @@
 #include "Autobus.h"
 #include "Kierowca.h"
 #include "Trasa.h"
-//#include "MenZadan.h"
+
 
 Zadanie *  Zadanie::noweZadanie(baseTrasa* trasa, baseKierowca* kierowca, baseAutobus* autobus)
 {	
@@ -72,12 +72,12 @@ void Zadanie::timerZadania()
 	
 }
 
-void Zadanie::attachMngr(MenZadan* mngr)
+void Zadanie::attachMngr(Obserwator* mngr)
 {
 	this->mngr = mngr;
 }
 
-void Zadanie::detachMngr(MenZadan* mngr)
+void Zadanie::detachMngr(Obserwator* mngr)
 {
 	this->mngr = nullptr;
 }
