@@ -1,12 +1,18 @@
 #pragma once
 #include <iostream>
 #include <string.h>
+class Zadanie;
+//class MenZadan;
+#include "Zadanie.h"
 
 class MenZadan
 {
-	std::string stanZadania;
+public:
+	std::string stanZadania = "pending";
+	Zadanie* zad;
 
-	void setObject();
+
+	void setObject(Zadanie* zad);
 	void updateObeserver();
 	
 

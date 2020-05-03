@@ -11,7 +11,9 @@
 
 int main()
 {
+    std::vector<MenZadan*> listaMngr;
     std::vector<Zadanie*> listaZadan;
+
     Zadanie* pierwsze = new Zadanie;
     Zadanie* drugie = new Zadanie;
     listaZadan.push_back(pierwsze);
@@ -35,6 +37,18 @@ int main()
     listaZadan.at(0)->noweZadanie(trasy->trasy.at(0), kierowcy->kierowcy.at(0), autobusy->autobusy.at(0));
     listaZadan.at(1)->noweZadanie(trasy->trasy.at(1), kierowcy->kierowcy.at(1), autobusy->autobusy.at(1));
     listaZadan.push_back((new Zadanie)->noweZadanie(trasy->trasy.at(2), kierowcy->kierowcy.at(2), autobusy->autobusy.at(2)));
+
+    /*MenZadan* mngr= new MenZadan;*/
+
+
+    for (auto x : listaZadan) {
+        MenZadan* temp = new MenZadan;
+        listaMngr.push_back(temp);
+        temp->setObject(x);
+        x->attachMngr(temp);
+    }
+
+
 
     system("pause");
     while (1)

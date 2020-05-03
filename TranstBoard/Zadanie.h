@@ -2,7 +2,11 @@
 #include "Kierowca.h"
 #include "Trasa.h"
 #include "Autobus.h"
-#include "iostream"
+
+//class Zadanie;
+class MenZadan;
+#include "MenZadan.h"
+#include <iostream>
 
 class Zadanie
 {
@@ -13,6 +17,7 @@ public:
 	bool koniec;
 	int scale = 30;
 
+	MenZadan *mngr;
 	baseTrasa* trasa;
 	baseKierowca* kierowca;
 	baseAutobus* autobus;
@@ -21,6 +26,12 @@ public:
 	//Zadanie * noweZadanie(baseTrasa *  trasa);
 	void sprawdzPostep();
 	void timerZadania();
+
+	void notify();
+	void attachMngr( MenZadan * mngr);
+	void detachMngr( MenZadan * mngr);
+	
+
 
 };
 
