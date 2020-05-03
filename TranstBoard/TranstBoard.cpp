@@ -18,20 +18,24 @@ int main()
     listaZadan.push_back(drugie);
 
     Trasa* trasy = new Trasa();
-    trasy->dodajTrase("Krakow", "Gdansk", 60);
+    trasy->dodajTrase("Krakow", "Gdansk", 40);
     trasy->dodajTrase("Warszawa", "Gdansk", 30);
+    trasy->dodajTrase("Szczecin", "Gdansk", 14);
 
     Autobus* autobusy = new Autobus();
     autobusy->dodajAutobus("Solaris", "ABC", "KR12345", "Elektryczny", 32);
     autobusy->dodajAutobus("Mercedes", "ABC", "ABCDEFG", "Diesel", 31);
+    autobusy->dodajAutobus("Jelcz", "ABC", "QWERTYU", "Diesel", 51);
 
     Kierowca* kierowcy = new Kierowca();
     kierowcy->dodajKierowce("Jan", "Nowak", 13);
     kierowcy->dodajKierowce("Janusz", "Tracz", 121);
+    kierowcy->dodajKierowce("Janusz", "Gracz", 131);
 
     listaZadan.at(0)->noweZadanie(trasy->trasy.at(0), kierowcy->kierowcy.at(0), autobusy->autobusy.at(0));
     listaZadan.at(1)->noweZadanie(trasy->trasy.at(1), kierowcy->kierowcy.at(1), autobusy->autobusy.at(1));
-    
+    listaZadan.push_back((new Zadanie)->noweZadanie(trasy->trasy.at(2), kierowcy->kierowcy.at(2), autobusy->autobusy.at(2)));
+
     system("pause");
     while (1)
     {

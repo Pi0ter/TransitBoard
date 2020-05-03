@@ -54,11 +54,11 @@ void Autobus::wypiszAutobusy() {
 
 void Autobus::usunAutobus() {
 	int nr;
-	std::cout << std::endl << "Podaj numer autobusu do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer autobusu do usniecia " << std::endl;
 
 	wypiszAutobusy();
 
-	std::cout << std::endl << "Podaj numer autobusu do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer autobusu do usniecia " << std::endl;
 	std::cin >> nr;
 
 	if (nr > (int)autobusy.size()) {

@@ -67,7 +67,7 @@ void Trasa::wypiszTrasy() {
 	std::cout << std::endl << "------ Lista tras ------" << std::endl;
 	for (int i = 0; i < (int)trasy.size(); i++)
 	{
-		std::cout << std::endl << i << ". Poczatek:" << trasy.at(i)->poczatek
+		std::cout << std::endl << i << ". Poczatek: " << trasy.at(i)->poczatek
 			<< " \t Koniec: " << trasy.at(i)->koniec
 			<< " \t Dlugosc: " << trasy.at(i)->odleglosc;
 		
@@ -82,11 +82,11 @@ void Trasa::wypiszTrasy() {
 
 void Trasa::usunTrase() {
 	int nr;
-	std::cout << std::endl << "Podaj numer trasy do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer trasy do usniecia " << std::endl;
 
 	wypiszTrasy();
 
-	std::cout << std::endl << "Podaj numer kierowcy do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer kierowcy do usniecia " << std::endl;
 	std::cin >> nr;
 
 	if (nr > (int)trasy.size()) {

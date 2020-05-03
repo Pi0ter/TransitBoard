@@ -41,11 +41,11 @@ void Kierowca::wypiszKierowcow() {
 
 void Kierowca::usunKierowce() {
 	int nr;
-	std::cout << std::endl << "Podaj numer kierowcy do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer kierowcy do usniecia " << std::endl;
 
 	wypiszKierowcow();
 
-	std::cout << std::endl << "Podaj numer kierowcy do usniecia" << std::endl;
+	std::cout << std::endl << "Podaj numer kierowcy do usniecia " << std::endl;
 	std::cin >> nr;
 
 	if (nr > (int)kierowcy.size()) {

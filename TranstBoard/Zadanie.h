@@ -9,7 +9,9 @@ class Zadanie
 public:
 	int meta;
 	int postep;
+	float krok;
 	bool koniec;
+	int scale = 30;
 
 	baseTrasa* trasa;
 	baseKierowca* kierowca;
