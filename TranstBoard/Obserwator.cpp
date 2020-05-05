@@ -1,4 +1,5 @@
 #include "Obserwator.h"
+#include <Windows.h>
 
 void Obserwator::setObject(Zadanie * zad)
 {
@@ -11,5 +12,5 @@ void Obserwator::updateObeserver()
 	std::cout << std::endl << "Zadanie zostalo wykonane, kierowca: " <<
 		zad->kierowca->imie << " " << zad->kierowca->nazwisko <<
 		" Rejestracja autobusu: " << zad->autobus->rejestracja;
-	system("pause");
+
 }

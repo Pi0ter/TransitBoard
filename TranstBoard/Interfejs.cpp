@@ -131,15 +131,10 @@ void Interfejs::generujMenu()
 	std::cout << " 8. \t  Wyswietl dostepnych kierowcow" << std::endl;
 	std::cout << " 9. \t  Uruchom zadania" << std::endl;
 	std::cout << std::endl << ">";
+
 	int opcja;
 	std::cin >> opcja;
 	opcjaMenu(opcja);
-
-
-
-
-
-
 }
 
 void Interfejs::opcjaMenu(int opcja)
