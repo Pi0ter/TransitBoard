@@ -21,11 +21,13 @@ public:
 	baseKierowca* kierowca;
 	baseAutobus* autobus;
 
-	Zadanie * noweZadanie(baseTrasa *  trasa, baseKierowca* kierowca, baseAutobus* autobus);
 	//Zadanie * noweZadanie(baseTrasa *  trasa);
+
+	Zadanie * noweZadanie(baseTrasa *  trasa, baseKierowca* kierowca, baseAutobus* autobus);
+
 	void sprawdzPostep();
 	void timerZadania();
-
+	//komunikacja z observerem
 	void notify();
 	void attachMngr(Obserwator* mngr);
 	void detachMngr(Obserwator* mngr);

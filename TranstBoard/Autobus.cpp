@@ -46,7 +46,7 @@ void Autobus::wypiszAutobusy() {
 			<< " \t Model: " << autobusy.at(i)->model << " \tNaped: " 
 			<< autobusy.at(i)->naped << "\t pojemnosc: " 
 			<< autobusy.at(i)->pojemnosc << "\t rejestracja: " 
-			<< autobusy.at(i)->rejestracja<< "\t stan: "
+			<< autobusy.at(i)->rejestracja<< "\t Status: "
 			<< autobusy.at(i)->stan;
 	}
 
@@ -71,5 +71,4 @@ void Autobus::usunAutobus() {
 	autobusy.erase(autobusy.begin() + nr);
 	}
 
-		
 }

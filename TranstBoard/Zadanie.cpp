@@ -12,8 +12,6 @@ Zadanie *  Zadanie::noweZadanie(baseTrasa* trasa, baseKierowca* kierowca, baseAu
 	}
 	koniec = false;
 	
-
-
 	this->trasa = trasa;
 	this->kierowca = kierowca;
 	this->autobus = autobus;

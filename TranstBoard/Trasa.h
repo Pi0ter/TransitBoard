@@ -22,8 +22,6 @@ struct baseTrasa
 class Trasa
 {
 public:
-	
-
 	std::vector<baseTrasa*> trasy;
 
 	virtual void dodajTrase();

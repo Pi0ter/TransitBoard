@@ -148,6 +148,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Autobus.cpp" />
+    <ClCompile Include="Interfejs.cpp" />
     <ClCompile Include="Kierowca.cpp" />
     <ClCompile Include="Obserwator.cpp" />
     <ClCompile Include="TranstBoard.cpp" />
@@ -156,10 +157,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Autobus.h" />
+    <ClInclude Include="Interfejs.h" />
     <ClInclude Include="Kierowca.h" />
     <ClInclude Include="Obserwator.h" />
     <ClInclude Include="Trasa.h" />
     <ClInclude Include="Zadanie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

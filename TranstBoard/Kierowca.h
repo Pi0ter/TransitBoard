@@ -22,8 +22,6 @@ struct baseKierowca
 class Kierowca
 {
 public:
-	
-
 	std::vector<baseKierowca*> kierowcy;
 
 
