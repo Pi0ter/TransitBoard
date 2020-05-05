@@ -24,16 +24,15 @@ public:
 	Autobus* ListaAutobusow = new Autobus;
 	Trasa* ListaTras = new Trasa;
 
-
-
 	//dev tools
 	void zapelnijZasoby();
 	void zapelnijZadania();
+	//dev tools
+
 
 	void dodajAutobus();
 	void dodajKierowce();
 	void dodajTrase();
-
 	void dodajZadanie();
 	
 
@@ -45,13 +44,5 @@ public:
 	void opcjaMenu(int opcja);
 
 	void uruchomZadania();
-
-	
-	
-
-
-
-
-
 };
 

@@ -87,8 +87,8 @@ void Interfejs::dodajZadanie()
 	));
 
 	listaMngr.push_back(new Obserwator);
-	listaMngr.at(listaMngr.size())->setObject(listaZadan.at(listaZadan.size()));
-	listaZadan.at(listaZadan.size())->attachMngr(listaMngr.at(listaMngr.size()));
+	listaMngr.at(listaMngr.size()-1)->setObject(listaZadan.at(listaZadan.size()-1));
+	listaZadan.at(listaZadan.size()-1)->attachMngr(listaMngr.at(listaMngr.size()-1));
 
 
 
@@ -204,9 +204,7 @@ void Interfejs::uruchomZadania()
 			listaZadan.at(i)->timerZadania();
 			if (listaZadan.at(i)->koniec == true) {
 				done[i] = 1;
-			}
-			
-			
+			}			
 		}
 		for (int i = 0; i < (int)listaZadan.size(); i++) {
 			if (done[i] == 1) {
@@ -218,8 +216,8 @@ void Interfejs::uruchomZadania()
 		if (count == 0)
 			break;
 
-		//Sleep(500);
-		system("pause");
+		Sleep(500);
+		/*system("pause");*/
 	}
 
 	generujMenu();

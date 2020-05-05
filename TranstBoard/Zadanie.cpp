@@ -3,6 +3,22 @@
 #include "Kierowca.h"
 #include "Trasa.h"
 
+void Zadanie::attachMngr(Obserwator* mngr)
+{
+	this->mngr = mngr;
+}
+
+void Zadanie::detachMngr(Obserwator* mngr)
+{
+	this->mngr = nullptr;
+}
+
+void Zadanie::notify()
+{
+	if (this->mngr)
+		this->mngr->updateObeserver();
+}
+
 
 Zadanie *  Zadanie::noweZadanie(baseTrasa* trasa, baseKierowca* kierowca, baseAutobus* autobus)
 {	
@@ -68,20 +84,4 @@ void Zadanie::timerZadania()
 		//system("pause");
 	}
 	
-}
-
-void Zadanie::attachMngr(Obserwator* mngr)
-{
-	this->mngr = mngr;
-}
-
-void Zadanie::detachMngr(Obserwator* mngr)
-{
-	this->mngr = nullptr;
-}
-
-void Zadanie::notify()
-{
-	if(this->mngr)
-		this->mngr->updateObeserver();
 }
