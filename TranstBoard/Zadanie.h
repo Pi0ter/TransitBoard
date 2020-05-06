@@ -17,6 +17,7 @@ public:
 	int scale = 30;
 
 	Obserwator *mngr;
+
 	baseTrasa* trasa;
 	baseKierowca* kierowca;
 	baseAutobus* autobus;

@@ -15,7 +15,11 @@ Interfejs::Interfejs() {
 
 
 void Interfejs::zapelnijZasoby()
-{	
+{
+	
+
+
+	
 	ListaKierowcow->dodajKierowce("Jan", "Nowak", 13);
 	ListaKierowcow->dodajKierowce("Janusz", "Tracz", 121);
 	ListaKierowcow->dodajKierowce("Grzegorz", "Gracz", 131);
@@ -79,7 +83,7 @@ void Interfejs::dodajZadanie()
 	wyswietlDostepneTrasy();
 	std::cout << "Podaj numer trasy dla nowego zadania: ";
 	std::cin >> c;
-
+	
 	listaZadan.push_back((new Zadanie)->noweZadanie(
 		ListaTras->trasy.at(c),
 		ListaKierowcow->kierowcy.at(a),

@@ -8,5 +8,28 @@ int main()
 
 
 }
+/*
+Użyte Wzorce:
 
+Klasa   -   Wzorzec
+
+Obserwer    <-  Observer
+
+Interfejs   <-  Singleton
+            <-  Mediator
+
+Zadanie     <- Builder
+
+
+Instrukcja Uruchomienia:
+
+Wymagania:
+ - Visual Studio 2019 (Możliwe że działa na poprzednich)
+ - Kompilator Cpp
+
+Uruchomienie:
+
+1. Kompilacja klas
+2. Uruchomienie programu
+*/
 
