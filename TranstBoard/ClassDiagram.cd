@@ -1,2 +1,64 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Autobus">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAQBAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Autobus.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfejs">
+    <Position X="0.75" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABgRIAAAIAAQAACAAAEAEAAAAQjAACSSAAAAAAAAAAA=</HashCode>
+      <FileName>Interfejs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kierowca">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAIAAAAAAAgAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Kierowca.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Obserwator">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAQAAIAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Obserwator.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Trasa">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAABAQAAEAAAAAAAA=</HashCode>
+      <FileName>Trasa.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zadanie">
+    <Position X="8.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAECAAACAAgAAAAAQAAACgAAAAAQBAFAAQEEAAQA=</HashCode>
+      <FileName>Zadanie.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

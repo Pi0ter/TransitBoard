@@ -25,7 +25,6 @@ public:
 	//Zadanie * noweZadanie(baseTrasa *  trasa);
 
 	Zadanie * noweZadanie(baseTrasa *  trasa, baseKierowca* kierowca, baseAutobus* autobus);
-
 	void sprawdzPostep();
 	void timerZadania();
 	//komunikacja z observerem
