@@ -12,6 +12,7 @@ public:
 
 
 	void setObject(Zadanie* zad);
+	void unsetObject();
 	void updateObeserver();
 	
 

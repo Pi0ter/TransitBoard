@@ -183,41 +183,39 @@ void Interfejs::opcjaMenu(int opcja)
 
 void Interfejs::uruchomZadania()
 {
-	int* done;
-	done = new int[(int)listaZadan.size()];
-	int count;
-	for (int i = 0; i < (int)listaZadan.size(); i++) {
-		done[i] = 0;
-	}
-
-
 	system("pause");
+	bool done = false;
+
 	while (1)
 	{
-		count = (int)listaZadan.size();
-		system("cls");
+		system("cls");				
+		int i = 1; //numeracja listy
+		if (listaZadan.size() == 0) break;
 
-		for (int i = 0; i < (int)listaZadan.size(); i++) {
-			std::cout << std::endl << "Zadanie nr " << i + 1 << ". ";
-			listaZadan.at(i)->sprawdzPostep();
-			listaZadan.at(i)->timerZadania();
-			if (listaZadan.at(i)->koniec == true) {
-				done[i] = 1;
-			}			
+		std::vector<Zadanie* >::iterator it = listaZadan.begin();
+
+		for (; it != listaZadan.end(); it++) {
+			std::cout << std::endl << "Zadanie nr " << i++ << ". ";			
+			(*it)->sprawdzPostep();
+			(*it)->timerZadania();			
 		}
-		for (int i = 0; i < (int)listaZadan.size(); i++) {
-			if (done[i] == 1) {
-				count--;
-			}
-			
-				
+
+		std::vector<Zadanie* >::iterator check = listaZadan.begin();
+		for (; check != listaZadan.end(); check++) {
+			if ((*check)->koniec == false)
+				break;			
+			else 
+				continue;			
 		}
-		if (count == 0)
+
+		if (check == listaZadan.end()) 
+			done = true;		
+
+		if (done)
 			break;
 
 		Sleep(500);
-		/*system("pause");*/
+		
 	}
-
 	generujMenu();
 }

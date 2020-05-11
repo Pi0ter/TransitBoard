@@ -79,6 +79,12 @@ void Zadanie::timerZadania()
 		kierowca->zajety = false;
 		koniec = true;
 		notify();
+		/*
+		mngr->unsetObject();
+		delete mngr;*/
+		
+
+
 
 		//system("pause");
 		//system("pause");

@@ -17,6 +17,7 @@ Obserwer    <-  Observer
 
 Interfejs   <-  Singleton
             <-  Mediator
+            <-  Iterator
 
 Zadanie     <- Builder
 

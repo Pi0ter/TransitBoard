@@ -6,6 +6,11 @@ void Obserwator::setObject(Zadanie * zad)
 	this->zad = zad;
 }
 
+void Obserwator::unsetObject()
+{
+	delete this->zad;
+}
+
 void Obserwator::updateObeserver()
 {
 	stanZadania = "Ukonczone";
